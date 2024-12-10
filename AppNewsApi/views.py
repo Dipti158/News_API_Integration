@@ -1,7 +1,8 @@
 from django.shortcuts import render
 import requests
+from decouple import config 
 # Create your views here.
-API_KEY = 'c8cb3b0e7dbe498981874084d6dec738'
+API_KEY = config("NEWS_API_KEY")
 
 
 def home(request):
